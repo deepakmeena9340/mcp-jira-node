@@ -8,7 +8,7 @@ const args = [
   "--transport",
   "sse",
   "--port",
-  "9000",
+  `${process.env.PORT}` || "9000",
   "-v",
 ]; // Add any arguments you want to pass
 
